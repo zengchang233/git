@@ -95,3 +95,12 @@ git rm <file> # 使用rm删除文件之后，如果真的是要删除，那就�
 # 如果是误删了，那就用git checkout -- <file>来丢弃工作区的修改。
 ```
 
+## 远程命令
+
+```bash
+git remote add origin git@server-name:path/repo-name.git # 关联一个远程库和本地库
+git push -u origin master # 第一次推送master分支的所有内容
+git push origin master # 第一次推送用了-u之后，以后每次推送修改，都可以使用这个命令推送到远程库
+```
+
+第一次推送`master`分支的时候，加上了`-u`参数，Git不但会把本地的`master`分支内容推送的远程新的`master`分支，还会把本地的`master`分支和远程的`master`分支关联起来，在以后的推送或者拉取时就可以简化命令。
