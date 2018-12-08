@@ -38,5 +38,12 @@ git status # 显示当前仓库的状态
 git diff # 查看当前修改但是没有add的文件，与上次已经commit文件之间的区别
 ```
 
+## git log
+
+```bash
+git log # 显示日志信息
+git log --pretty=oneline # 在一行里面显示精简的日志信息
+```
+
 
 
